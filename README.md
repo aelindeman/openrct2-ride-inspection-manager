@@ -8,7 +8,7 @@ Yes, but I don't like to play scenarios with cheats enabled, and I think it's te
 
 This plugin simply automates something you can already do in-game normally, without cheats.
 
-It also knows that Crooked House and Maze rides don't break down, and therefore don't need to be inspected, so it will always set their inspection intervals to *Never* (regardless of your inspection interval choice).
+It also knows that Crooked House, Maze, and Mini Golf rides don't break down, and therefore don't need to be inspected, so it will always set their inspection intervals to *Never* (regardless of your inspection interval choice).
 
 ## Installation
 
