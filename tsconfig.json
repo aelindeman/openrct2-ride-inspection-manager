@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "strict": true,
     "target": "ES5"
   },
