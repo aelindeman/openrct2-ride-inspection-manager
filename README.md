@@ -29,7 +29,7 @@ Once enabled, the plugin **will overwrite** any custom inspection intervals you'
 - Fork and clone this repo. You'll need to clone the repo with submodules (`git clone --recursive` when you clone, or `git submodule update --init --remote` later) to get TypeScript type definition support.
 - `yarn install`
 - Make your changes
-- `yarn build -w -f `, or `yarn build` and move `dist/ride-inspection-manager.js` in your `OpenRCT2/plugin` folder
+- `yarn build` and move `dist/ride-inspection-manager.js` in your `OpenRCT2/plugin` folder
   - Set `enable_hot_reloading = true` in `OpenRCT2/config.ini` so you don't have to reload the game after each change
   - The `-w` flag enables [rollup](https://rollupjs.org)'s watch mode
   - The `-f $HOME/.config/OpenRCT2/plugin/ride-inspection-manager.js` flag dunks the plugin directly into your OpenRCT2 plugin folder without having to move it yourself ([see docs](https://github.com/OpenRCT2/OpenRCT2/blob/develop/distribution/scripting.md) for correct scripts path for your platform)
