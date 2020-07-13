@@ -4,7 +4,7 @@
   "description": "An OpenRCT2 plugin for maintaining the ride inspection interval for all rides in the park",
   "main": "index.ts",
   "scripts": {
-    "build": "rollup src/index.ts --file dist/ride-inspection-manager.js --plugin @rollup/plugin-typescript --format iife",
+    "build": "rollup -c",
     "check": "yarn format --check && yarn lint",
     "format": "prettier src",
     "lint": "eslint src",
