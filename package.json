@@ -1,0 +1,32 @@
+{
+  "name": "ride-price-manager",
+  "version": "1.0.0",
+  "description": "An OpenRCT2 plugin for maintaining the ride inspection interval for all rides in the park",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rollup src/index.ts --file dist/ride-inspection-manager.js --plugin @rollup/plugin-typescript --format iife",
+    "check": "yarn format --check && yarn lint",
+    "format": "prettier src",
+    "lint": "eslint src",
+    "prepack": "yarn build",
+    "prepublish": "yarn check"
+  },
+  "files": [
+    "dist/"
+  ],
+  "author": {
+    "name": "Alex Lindeman",
+    "email": "aelindeman@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^5.0.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "eslint": "^7.4.0",
+    "prettier": "=2.0.5",
+    "rollup": "^2.11.0",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.0"
+  }
+}

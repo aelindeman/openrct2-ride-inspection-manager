@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "commonjs",
+    "strict": true,
+    "target": "ES5"
+  },
+  "files": [
+    "OpenRCT2/distribution/openrct2.d.ts"
+  ],
+  "include": [
+    "src"
+  ]
+}
