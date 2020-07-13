@@ -1,9 +1,16 @@
-steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-node@v1
-    with:
-      node-version: '12'
-  - run: yarn install
-  - run: yarn format --check
-  - run: yarn lint
-  - run: yarn build
+on:
+  - push
+  - pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: yarn install
+      - run: yarn format --check
+      - run: yarn lint
+      - run: yarn build
